@@ -216,15 +216,6 @@ i{
 
 }
 
-   
-    
-
-
-
-    
-
-
-
 
 /* Table Styles */
 
@@ -315,7 +306,7 @@ i{
     background-color: #f2f2f2;
 }
 
-
+/* Responsive Styles-1 */
 
 @media screen and (max-width: 1024px) {
 
@@ -485,6 +476,8 @@ i{
 
 }
 
+/* Responsive Styles-2 */
+
 
 @media screen and (max-width: 1024px) {
 
@@ -549,21 +542,7 @@ i{
 }
 
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
 /* Section 3 CSS */
-
 
 
 
@@ -573,22 +552,23 @@ text-align: left;
 justify-content:space-evenly;
 padding: 50px 10%;
 width: 100%;
-background: #effaff;
+background: #76a6bd;
 border-radius: 12px;
 margin-top: 70px;
 font-size: 1.2rem;  
 display: grid;
 overflow-x: auto;
+gap: 15px;
+
+} 
+ 
 
 
-
-}
-
-
+ 
     
 
 
-.section-container h1{
+ .section-container h1{
 
   font-size: 20px;
   width: 100%;
@@ -600,56 +580,118 @@ overflow-x: auto;
 }
 
 
-.section-container .card{
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.card {
 
-    
-
-    
+    margin-bottom: 20px;
+    margin-right: 10px;
+    gap: 0.5rem !important;
    
 
+
 }
 
-.section-container .card img{
 
+.card img {
     width: 100%;
-    height: 250px;
+    height: 200px;
+    object-fit: cover;
 }
 
 
-.section-container .card-title{
 
-    
-    font-size: 1.4rem;
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.card-body ol,  
+ul {
+  padding-left: 0rem !important;
+}
+
+
+.card-title{
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* CSS Testimonials  */
+
+
+
+.Testimonial-content {
+    background-color: #f0f4f8;
+    padding: 60px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+  }
+  
+  .Testimonial-content h3 {
+    font-size: 32px;
     color: #17466e;
     font-weight: bold;
-    margin-top: 10px;
+  }
+  
+  .Testimonial-content p {
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+  
+  .Testimonial-content .card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .Testimonial-content .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  }
+  
+  .Testimonial-content .card-body {
     text-align: center;
-    text-decoration: underline;
-
-}
-
-.section-container ul,li{
-
-    
-    list-style: none;
-    text-align: center;
-    font-size: 1.2rem;
-    color: #1f4f79;
-    margin-top: 10px;
-    padding-left: 0px;
-}
-
- 
- 
-
-
- 
-
-
-
-
+    padding: 30px 20px;
+  }
+  
+  .Testimonial-content .card h5 {
+    color: #17466e;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .Testimonial-content .card h6 {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  .Testimonial-content ul li {
+    margin: 0 3px;
+  }
+  
+  .Testimonial-content .fa-star,
+  .Testimonial-content .fa-star-half-alt,
+  .Testimonial-content .fa-star-o {
+    color: #ffc107; /* golden yellow stars */
+  }
+  
+  .Testimonial-content .fa-quote-left {
+    color: #17466e;
+    margin-right: 5px;
+  }
+  
