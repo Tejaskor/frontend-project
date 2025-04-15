@@ -537,7 +537,7 @@ i{
             color: #4896bd;
         }
 
-        .
+        
             
 }
 
@@ -628,70 +628,13 @@ ul {
 
 /* CSS Testimonials  */
 
+/* Carousel container */
+.testimonials-content {
+    padding: 40px 0;
+    background-color: #3287dc;
+    margin-top: 40px;
+  }
 
 
-.Testimonial-content {
-    background-color: #f0f4f8;
-    padding: 60px 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 30px;
-  }
-  
-  .Testimonial-content h3 {
-    font-size: 32px;
-    color: #17466e;
-    font-weight: bold;
-  }
-  
-  .Testimonial-content p {
-    color: #555;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 16px;
-  }
-  
-  .Testimonial-content .card {
-    border: none;
-    border-radius: 16px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .Testimonial-content .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-  }
-  
-  .Testimonial-content .card-body {
-    text-align: center;
-    padding: 30px 20px;
-  }
-  
-  .Testimonial-content .card h5 {
-    color: #17466e;
-    font-weight: 600;
-    font-size: 20px;
-  }
-  
-  .Testimonial-content .card h6 {
-    font-size: 14px;
-    color: #888;
-    margin-bottom: 20px;
-  }
-  
-  .Testimonial-content ul li {
-    margin: 0 3px;
-  }
-  
-  .Testimonial-content .fa-star,
-  .Testimonial-content .fa-star-half-alt,
-  .Testimonial-content .fa-star-o {
-    color: #ffc107; /* golden yellow stars */
-  }
-  
-  .Testimonial-content .fa-quote-left {
-    color: #17466e;
-    margin-right: 5px;
-  }
+
   
