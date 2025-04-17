@@ -1,173 +1,326 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap acc</title>
-    <link rel="stylesheet" href="/assets/css/Bootstrap/accordin.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-  </head>
-  <body>
-   
-    
+<head>
+  <meta charset="UTF-8">
+  <title>Monimeer Wellness Accordions</title>
+  <link rel="stylesheet" href="/assets/css/Bootstrap/Accordin/accordin.css"> <!-- Linking External CSS -->
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+</head>
 
-      <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
-        <div class="container">
-          <a class="navbar-brand fw-bold" href="#"> Monimeer Wellness </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-      
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Services
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">EMR Software</a></li>
-                  <li><a class="dropdown-item" href="#">EMR Softwa  re</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">More Services</a></li>
-                </ul>
-              </li>
-      
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-      
-            <a href="#" class="btn btn-light custom-signup-btn">Sign Up</a>
-          </div>
+<body class="p-5 d-flex flex-column gap-5 align-items-center">
+
+  <!-- Accordion 1: Classic Blue Theme -->
+  <div class="accordion custom-accordion-one" id="accordionOne" style="width: 50%;">
+    <h3>Wellness Monimeer - Blue Theme</h3>
+    <!-- Same content but unique IDs -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneA" aria-expanded="true" aria-controls="collapseOneA">
+          About Us
+        </button>
+      </h2>
+      <div id="collapseOneA" class="accordion-collapse collapse show" data-bs-parent="#accordionOne">
+        <div class="accordion-body">
+          <strong>At The Monimeer Wellness,</strong> we are dedicated to providing compassionate, personalized healthcare that empowers individuals to live healthier and happier lives. Our team of skilled professionals and advanced medical services ensure that you receive the best care in a warm, <code>Monimeer Wellness</code>, welcoming environment.
         </div>
-      </nav>
-      
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneB" aria-expanded="false" aria-controls="collapseOneB">
+          Our Services
+        </button>
+      </h2>
+      <div id="collapseOneB" class="accordion-collapse collapse" data-bs-parent="#accordionOne">
+        <div class="accordion-body">
+          <ul>
+            <li>Preventive Health Check-ups</li>
+            <li>Family Medicine & Primary Care</li>
+            <li>Women's Health & Wellness</li>
+            <li>Pediatrics & Child Care</li>
+            <li>Cardiology & Heart Health</li>
+            <li>Mental Health & Counseling</li>
+            <li>Diagnostic Imaging & Lab Tests</li>
+            <li>Online Consultations & E-Reports</li>
+          </ul>
+          <h4>Why Choose The Monimeer Wellness</h4>
+          <ul>
+            <li>Trusted & Experienced Healthcare Professionals</li>
+            <li>Comprehensive Care Under One Roof</li>
+            <li>Patient-Centered Approach</li>
+            <li>Modern Medical Technology</li>
+            <li>Easy Online Booking & Reports Access</li>
+            <li>Affordable and Transparent Pricing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneC" aria-expanded="false" aria-controls="collapseOneC">
+          Health Tips
+        </button>
+      </h2>
+      <div id="collapseOneC" class="accordion-collapse collapse" data-bs-parent="#accordionOne">
+        <div class="accordion-body">
+          <ul>
+            <li>Drink plenty of water every day</li>
+            <li>Schedule regular health checkups</li>
+            <li>Practice mindfulness and self-care</li>
+            <li>Prioritize sleep and balanced nutrition</li>
+            <li>Stay active and move daily</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accordion 2: Dark Theme -->
+  <div class="accordion custom-accordion-two" id="accordionTwo" style="width: 50%;">
+    <h3>Wellness Monimeer - Dark Theme</h3>
+    <!-- Use unique collapse IDs -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoA" aria-expanded="true" aria-controls="collapseTwoA">
+          About Us
+        </button>
+      </h2>
+      <div id="collapseTwoA" class="accordion-collapse collapse show" data-bs-parent="#accordionTwo">
+        <div class="accordion-body">
+          <strong>At The Monimeer Wellness,</strong> we are dedicated to providing compassionate, personalized healthcare that empowers individuals to live healthier and happier lives. Our team of skilled professionals and advanced medical services ensure that you receive the best care in a warm, <code>Monimeer Wellness</code>, welcoming environment.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoB" aria-expanded="false" aria-controls="collapseTwoB">
+          Our Services
+        </button>
+      </h2>
+      <div id="collapseTwoB" class="accordion-collapse collapse" data-bs-parent="#accordionTwo">
+        <div class="accordion-body">
+          <ul>
+            <li>Preventive Health Check-ups</li>
+            <li>Family Medicine & Primary Care</li>
+            <li>Women's Health & Wellness</li>
+            <li>Pediatrics & Child Care</li>
+            <li>Cardiology & Heart Health</li>
+            <li>Mental Health & Counseling</li>
+            <li>Diagnostic Imaging & Lab Tests</li>
+            <li>Online Consultations & E-Reports</li>
+          </ul>
+          <h4>Why Choose The Monimeer Wellness</h4>
+          <ul>
+            <li>Trusted & Experienced Healthcare Professionals</li>
+            <li>Comprehensive Care Under One Roof</li>
+            <li>Patient-Centered Approach</li>
+            <li>Modern Medical Technology</li>
+            <li>Easy Online Booking & Reports Access</li>
+            <li>Affordable and Transparent Pricing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoC" aria-expanded="false" aria-controls="collapseTwoC">
+          Health Tips
+        </button>
+      </h2>
+      <div id="collapseTwoC" class="accordion-collapse collapse" data-bs-parent="#accordionTwo">
+        <div class="accordion-body">
+          <ul>
+            <li>Drink plenty of water every day</li>
+            <li>Schedule regular health checkups</li>
+            <li>Practice mindfulness and self-care</li>
+            <li>Prioritize sleep and balanced nutrition</li>
+            <li>Stay active and move daily</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accordion 3: Border Theme -->
+  <div class="accordion custom-accordion-three" id="accordionThree" style="width: 50%;">
+    <h3>Wellness Monimeer - Border Theme</h3>
+    <!-- Use unique collapse IDs -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeA" aria-expanded="true" aria-controls="collapseThreeA">
+          About Us
+        </button>
+      </h2>
+      <div id="collapseThreeA" class="accordion-collapse collapse show" data-bs-parent="#accordionThree">
+        <div class="accordion-body">
+          <strong>At The Monimeer Wellness,</strong> we are dedicated to providing compassionate, personalized healthcare that empowers individuals to live healthier and happier lives. Our team of skilled professionals and advanced medical services ensure that you receive the best care in a warm, <code>Monimeer Wellness</code>, welcoming environment.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeB" aria-expanded="false" aria-controls="collapseThreeB">
+          Our Services
+        </button>
+      </h2>
+      <div id="collapseThreeB" class="accordion-collapse collapse" data-bs-parent="#accordionThree">
+        <div class="accordion-body">
+          <ul>
+            <li>Preventive Health Check-ups</li>
+            <li>Family Medicine & Primary Care</li>
+            <li>Women's Health & Wellness</li>
+            <li>Pediatrics & Child Care</li>
+            <li>Cardiology & Heart Health</li>
+            <li>Mental Health & Counseling</li>
+            <li>Diagnostic Imaging & Lab Tests</li>
+            <li>Online Consultations & E-Reports</li>
+          </ul>
+          <h4>Why Choose The Monimeer Wellness</h4>
+          <ul>
+            <li>Trusted & Experienced Healthcare Professionals</li>
+            <li>Comprehensive Care Under One Roof</li>
+            <li>Patient-Centered Approach</li>
+            <li>Modern Medical Technology</li>
+            <li>Easy Online Booking & Reports Access</li>
+            <li>Affordable and Transparent Pricing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
   
-  
-
-    
 
 
+ 
+    
+          <!-- Carousels design -->
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <h1>Hello, world!</h1>
+         
+          
+            <div class="container">
+          
+              <!-- Carousel 1: Standard Image Carousel -->
+              <section class="carousel-section">
+                <h3 class="carousel-title">Image Carousel</h3>
+                <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="/assets/images/consult tax.jpg" class="d-block w-100" alt="Consult Tax" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/assets/images/healthcare.png" class="d-block w-100" alt="Healthcare" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/assets/images/LLP.png" class="d-block w-100" alt="LLP" />
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </section>
+          
+              <!-- Carousel 2: Card Carousel -->
+              <section class="carousel-section">
+                <h3 class="carousel-title">Card Carousel</h3>
+                <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="d-flex justify-content-center">
+                        <div class="card carousel-card">
+                          <img src="/assets/images/consult tax.jpg" class="card-img-top" alt="Consultation" />
+                          <div class="card-body">
+                            <h5 class="card-title">Consultation</h5>
+                            <p class="card-text">Get expert tax advice from professionals.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex justify-content-center">
+                        <div class="card carousel-card">
+                          <img src="/assets/images/healthcare.png" class="card-img-top" alt="Healthcare" />
+                          <div class="card-body">
+                            <h5 class="card-title">Healthcare</h5>
+                            <p class="card-text">Comprehensive wellness and medical services.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex justify-content-center">
+                        <div class="card carousel-card">
+                          <img src="/assets/images/LLP.png" class="card-img-top" alt="LLP Services" />
+                          <div class="card-body">
+                            <h5 class="card-title">LLP Services</h5>
+                            <p class="card-text">Set up your LLP with legal guidance.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </section>
+          
+              <!-- Carousel 3: Custom Style Carousel -->
+              <section class="carousel-section">
+                <h3 class="carousel-title">Custom Styled Carousel</h3>
+                <div id="customCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="custom-slide">
+                        <h2>Welcome to Monimeer</h2>
+                        <p>Empowering lives through wellness and care.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="custom-slide slide-2">
+                        <h2>Online Consultation</h2>
+                        <p>Fast, secure and from the comfort of your home.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="custom-slide slide-3">
+                        <h2>Health Services</h2>
+                        <p>Your journey to a healthier life starts here.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </section>
+          
+            </div>
+          
+            
+          
 
  
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
-     <section class="componenet">
-
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <h3>wellness Monimeer</h3>
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              About Us
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-            
-                <strong> At The Monimeer Wellness. </strong>  we are dedicated to providing compassionate, personalized healthcare that empowers individuals to live healthier and happier lives. Our team of skilled professionals and advanced medical services ensure that you receive the best care in a warm <code>  .Monimeer Wellness        </code>    , welcoming environment.
-          
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Our Services
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-
-                <ul>
-                    <li>Preventive Health Check-ups</li>
-                    <li>Family Medicine & Primary Care</li>
-                    <li>Women's Health & Wellness</li>
-                    <li>Pediatrics & Child Care</li>
-                    <li>Cardiology & Heart Health</li>
-                    <li>Mental Health & Counseling</li>
-                    <li>Diagnostic Imaging & Lab Tests</li>
-                    <li>Online Consultations & E-Reports</li>
-                  </ul>
-                  
-                  <h2>Why Choose The Monimeer Wellness</h2>
-                  <ul>
-                    <li>Trusted & Experienced Healthcare Professionals</li>
-                    <li>Comprehensive Care Under One Roof</li>
-                    <li>Patient-Centered Approach</li>
-                    <li>Modern Medical Technology</li>
-                    <li>Easy Online Booking & Reports Access</li>
-                    <li>Affordable and Transparent Pricing</li>
-                  </ul>
-                  
-           
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Health Tips from Monimeer
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-
-                <ul>
-                    <li>Drink plenty of water every day</li>
-                    <li>Schedule regular health checkups</li>
-                    <li>Practice mindfulness and self-care</li>
-                    <li>Prioritize sleep and balanced nutrition</li>
-                    <li>Stay active and move daily</li>
-                  </ul>
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-     </section>
-
-     
-     
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-  </body>
 </html>

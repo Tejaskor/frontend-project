@@ -1,75 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EHR System</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+
+  <style>
+    body {
+      background-image: url(/assets/images/health.jpeg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .navbar {
+      background: #907ee2;
+    }
+
+    .navbar-nav .nav-link,
+    .dropdown-toggle {
+      color: rgb(10, 62, 77) !important;
+      font-weight: 500;
+    }
+
+    .logo img {
+      width: 130px;
+      height: 100px;
+      object-fit: contain;
+    }
+
+    .btn-outline {
+      background: #0b4b73;
+      color: aliceblue;
+    }
+
+    .btn-outline:hover {
+      background: #dd5eb9;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .hero span {
+      color: #8465bd;
+    }
+
+    .btn-custom {
+      background-color: #4d8ed8;
+      color: #fff;
+      border: none;
+    }
+
+    .btn-custom:hover {
+      background: #b90f89;
+    }
+
+    .card-custom {
+      background: rgb(29, 159, 176);
+      color: rgb(0, 80, 150);
+    }
+
+    .card-custom:hover {
+      background: #907ee2;
+    }
+
+    .card-custom i {
+      color: rgb(12, 67, 82);
+      font-size: 40px;
+    }
+
+    .quote {
+      font-size: 30px;
+      font-weight: 600;
+      text-align: center;
+      color: rgb(5, 42, 52);
+    }
+
+    .span-content {
+      font-size: 18px;
+      font-weight: 600;
+      color: rgb(20, 93, 113);
+    }
+
+    .providers-wrapper {
+      background: #e7f8f9;
+    }
+
+    .btn-meet {
+      background-color: #002f6c;
+      color: white;
+      border-radius: 6px;
+    }
+
+    .btn-meet:hover {
+      background-color: #00489c;
+    }
+  </style>
+  
 </head>
+
 <body>
-    <div class="login-box">
-        <header>Login</header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg px-5">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/images/wellness.png" alt="logo" class="logo" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+
+        <!-- Dropdown 1 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">EHR</a></li>
+            <li><a class="dropdown-item" href="#">EMR</a></li>
+            <li><a class="dropdown-item" href="#">AI Development</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown 2 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Product Design</a></li>
+            <li><a class="dropdown-item" href="#">Web Design</a></li>
+            <li><a class="dropdown-item" href="#">Branding</a></li>
+            <li><a class="dropdown-item" href="#">Mobile App</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <form class="d-flex gap-2">
+        <input class="form-control" type="search" placeholder="Search" />
+        <button class="btn btn-outline">Patient Portal</button>
+      </form>
     </div>
-<div class="input-box">
+  </nav>
 
-<input type="text" class="input-field" placeholder="Email" autocomplete="off" required>
-<input type="Password" class="input-field" placeholder="Password" autocomplete="off" required>
-</div>
-
-<div class="forgot">
-<section>
-<input type="checkbox" name="remember" id="check">
-<label for="check">Remember me</label>
-</section>
-
-<section>
-
-    <a href="#">Forgot Password</a>
-
-</section></div>
-<div>
-<div class="input-submit">
-<button class="submit-btn" id="submit"></button>
-<label for="submit">Sign In</label>
-</div>
-<div class="sign-up-link">
-<p> Dont Have Account <a href="#" Sign Up> </a> </p>
-
-<br>
-
-
-
-</div>
-<div class="modal" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <!-- Hero Section -->
+  <section class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6 hero">
+        <h1>The complete EHR system for your <span>Practice</span></h1>
+        <p class="lead">
+          Welcome to Cipher Technology and Consulting where innovation meets excellence in healthcare automation.
+        </p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <button class="btn btn-custom">
+            Request a Callback <i class="fa-solid fa-right-from-bracket ms-2"></i>
+          </button>
+          <button class="btn btn-custom">
+            Book Appointment <i class="fa-regular fa-calendar-days ms-2"></i>
+          </button>
+          <button class="btn btn-custom">
+            Get Health Checkup <i class="fa-regular fa-hospital ms-2"></i>
+          </button>
         </div>
-        <div class="modal-body">
-          <p>Modal body text goes here.</p>
+        <p class="mt-4 text-primary">
+          <i class="fa-regular fa-circle-check" style="color: #74C0FC;"></i>
+          Experience Seamless Healthcare – No Credit Card Required!
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <img src="/assets/images/healthcare.png" class="img-fluid rounded" alt="healthcare image" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Card Section -->
+  <section class="container text-center mb-5">
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-3">
+        <div class="card card-custom p-4">
+          <i class="fa-solid fa-calendar-check mb-3"></i>
+          <h4>Appointment</h4>
+          <p>With Country Leading Experts</p>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-custom p-4">
+          <i class="fa-solid fa-hospital mb-3"></i>
+          <h4>Hospitals</h4>
+          <p>Health needs under one roof</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-custom p-4">
+          <i class="fa-solid fa-user-md mb-3"></i>
+          <h4>Specialties</h4>
+          <p>Our expertise in Healthcare</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-custom p-4">
+          <i class="fa-solid fa-stethoscope mb-3"></i>
+          <h4>Doctors</h4>
+          <p>Top experts for your health</p>
         </div>
       </div>
     </div>
-  </div>
+    <div class="mt-4 quote">
+      <i class="fa-brands fa-uncharted"></i> End-to-End Healthcare Software Development Services
+      <div class="span-content mt-2">
+        Secure and feature-rich healthcare custom software development within budget
+      </div>
+    </div>
+  </section>
 
+  <!-- Providers Section -->
+  <section class="providers-wrapper py-5 px-4 d-flex align-items-center gap-5 flex-wrap">
+    <div class="col-md-6">
+      <img src="/assets/images/networking-removebg-preview.png" class="img-fluid" alt="Provider Network Map" />
+    </div>
+    <div class="col-md-5">
+      <h5 class="text-uppercase text-primary">Our Providers</h5>
+      <h2 class="mb-3">World-class providers.<br />Top-notch care.</h2>
+      <p>
+        Connect with expert therapists & psychiatric providers who put you first. Our nationwide network ensures you receive the best of the best in mental health care.
+      </p>
+      <button class="btn btn-meet">Meet Our Providers</button>
+    </div>
+  </section>
 
-
-</div>
-      
-
-
-
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
